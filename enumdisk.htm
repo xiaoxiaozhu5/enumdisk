@@ -1,0 +1,258 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Enumdisk_files/filelist.xml">
+<title>Enumerating the Disk Devices</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Raju Ramanathan</o:Author>
+  <o:LastAuthor>Raju Ramanathan</o:LastAuthor>
+  <o:Revision>18</o:Revision>
+  <o:TotalTime>67</o:TotalTime>
+  <o:Created>2000-05-29T21:00:00Z</o:Created>
+  <o:LastSaved>2000-05-29T21:16:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>508</o:Words>
+  <o:Characters>2899</o:Characters>
+  <o:Company>Microsoft Corp.</o:Company>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3560</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+h2
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+h3
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+h4
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"MS Mincho";
+	mso-bidi-font-family:"Times New Roman";
+	color:windowtext;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:Verdana;
+color:black'>Enumdisk sample for Enumerating Disk Devices</span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>Summary</span></h3>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>Win32 applications can use the <B>SetupDi</B> APIs to enumerate all the devices that are available in the system. The Enumdisk.exe sample demonstrates this technique by enumerating all the disk devices regardless of the disk type. The sample also obtains a handle to the device to send IOCTL commands to get the adapter and device properties. Further, this communicates to the device by sending a small computer system interface (SCSI) pass-through command to get the Inquiry data.<o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>Device
+Enumeration</span></h3>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>The Enumdisk.exe sample uses the Setup class GUID_DEVCLASS_DISKDRIVE GUID to enumerate all the disk devices that are installed in the system. The sample then obtains the Device ID by getting the Registry properties.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>The handle to the device is needed to send IOCTLs from a Win32 application. The device handle can be obtained by opening the device with the device interface name. The disk class driver exposes this interface by registering the device interface. It uses the DiskClassGuid interface GUID for device registration. A Win32 application can obtain this interface name by using the <B>SetupDi</B> APIs with the same interface GUID. By performing this in a loop, all the registered disk interfaces can be obtained. Because this value is obtained from the disk class driver, this technique works for all types of disk devices, such as SCSI, Integrated Device Electronics (IDE), Universal Serial Bus (USB), and Institute for Electrical and Electronics Engineers (IEEE) 1394.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>Device
+Properties</span></h3>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><B>IOCTL_STORAGE_QUERY_PROPERTY</B> can be used to get the adapter and device properties, respectively. This IOCTL takes the STORAGE_PROPERTY_QUERY data structure as an argument. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>Before calling this IOCTL, the STORAGE_PROPERTY_ID and STORAGE_QUERY_TYPE members must be set accordingly. The STORAGE_PROPERTY_ID can be set to either StorageAdapterProperty or StorageDeviceProperty, and it determines the property to be returned. This data structure and its member values are defined in \Ntddk\Src\Ntddstor.h. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>Calling this StorageAdapterProperty IOCTL returns the STORAGE_ADAPTER_DESCRIPTOR data structure, which contains such adapter properties as the Bus Type, Maximum Transfer Length, Alignment Mask, and so on. StorageDeviceProperty returns the STORAGE_DEVICE_DESCRIPTOR data structure, which contains the Device Type, Vendor ID, Product ID, and so on. This information is obtained from the respective port driver. <o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;
+font-family:Verdana;color:black'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;
+font-family:Verdana;color:black'>SCSI Pass Through Interface</span></b></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'>The device handle obtained in this way can also be used to send SCSI pass-through commands to the device. The sample sends the Inquiry command to the device to get the Inquiry data. Refer to the SPTI sample, which is  available in the Windows 2000 DDK, for more information on the SCSI pass-through interface.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>Building
+the Sample<o:p></o:p></span></h3>
+
+<p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Verdana;
+mso-fareast-font-family:"MS Mincho";color:windowtext'>Click the <B>Free Build Environment</B> or <B>Checked Build Environment</B> icon under the Development Kits program group to set the basic environment variables that are needed by the build utility. <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Verdana;
+mso-fareast-font-family:"MS Mincho";color:windowtext'>Change to the directory
+containing the device source code, such as <b>cd c:\enumdisk</b><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Verdana;
+mso-fareast-font-family:"MS Mincho";color:windowtext'>Run <b>build -ceZ</b>, or use the <b>BLD</b> macro. This method invokes the Microsoft make routines that produce log files named Build<I>xxx</I>.log, Build<I>xxx</I>.wrn, and Build<I>xxx</I>.err if there are any warnings or errors. Note that <I>xxx</I> stands for "fre" or "chk" depending on the environment chosen. If the build succeeds, the executable Enumdisk.exe file is placed in a platform-specific subfolder of your %TargetPath% folder that is specified in the Sources file.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+font-family:Verdana;mso-fareast-font-family:"MS Mincho"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>Running
+the Enumdisk.EXE sample</span><u><span style='font-family:Verdana;mso-fareast-font-family:
+"MS Mincho";font-weight:normal'><o:p></o:p></span></u></h3>
+
+<p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Verdana;
+mso-fareast-font-family:"MS Mincho";color:windowtext'>This sample does not require any arguments. Just run the sample from a command-prompt window; all the disk device properties will be listed.<o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h3>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:13.5pt;font-family:Verdana'>CODE
+TOUR</span><span style='font-family:Verdana'><o:p></o:p></span></h3>
+
+<h4><span style='mso-bidi-font-family:"Courier New"'>&nbsp;</span><span
+style='font-family:Verdana'>File Manifest<o:p></o:p></span></h4>
+
+<pre><u>File<span style='mso-tab-count:2'>           </span>Description<o:p></o:p></u></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Enumdisk.c<span style="mso-spacerun: yes">     </span>Implements the Win32 application to enumerate the disk devices.<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Enumdisk.h<span style="mso-spacerun: yes">     </span>Header file for Enumdisk.c<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Sources<span style="mso-spacerun: yes">        </span>DDK build instructions<o:p></o:p></span></pre><pre><span
+style='mso-bidi-font-family:"Courier New"'>Enumdisk.htm<span style='mso-tab-count:
+1'>   </span>The documentation for these samples (this file)<o:p></o:p></span></pre>
+
+<p style='margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New"'>&nbsp;<o:p></o:p></span></p>
+
+<p style='margin:0in;margin-bottom:.0001pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:"Courier New";mso-fareast-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
